@@ -2,21 +2,19 @@ Bienvenue sur le repository Rails de Evan Bourgouin
 
 Ce projet crée une base de donnée pour un site similaire à Doctolib.
 
-Les models ont été créé comme suit :
+Il-y-a un model dogsitter et un model dog. Un dogsitter peut promener plusieurs dog à travers un stroll (promenade, en anglais) ; et un dog peut avoir plusieurs dogsitter à travers un stroll.
 
-un model doctor, qui a comme attributs : un first_name, qui est un string un last_name, qui est un string un specialty, qui est un string un postal_code, qui est un integer un model patient, qui a comme attributs : un first_name, qui est un string un last_name, qui est un string un model appointments, qui a comme attributs : un date, qui est un datetime
-
-Un appointment ne peut avoir qu'un seul doctor, mais un doctor peut avoir plusieurs appointment. Un appointment ne peut avoir qu'un seul patient, mais un patient peut avoir plusieurs appointment. Enfin, un doctor peut avoir plusieurs patient, au travers des appointments, et vice versa.
+Il-y-a une table City avec comme attribut city_name. Chaque ville contient plusieurs promeneurs et plusieurs chiens mais un chien et un promeneur ne peuvent appartenir qu'a une ville.
 
 Pour tester l'appli, réalisez les processus suivants :
 
 pour copier le repo sur votre machine
 
-git clone https://github.com/Cyran0/Doctolib.git
+git clone https://github.com/Cyran0/Dogs_Airbnb.git
 
 pour se déplacer dans le bon dossier
 
-cd Doctolib/
+cd Dogs_Airbnb/
 
 pour mettre à jour la liste de gems
 
@@ -32,7 +30,7 @@ rails db:seed
 
 La base de données complète se trouve (normalement) au chemin d'accès suivant :
 
-Doctolib/db/development.sqlite3
+Dogs_Airbnb/db/development.sqlite3
 
 Ouvrez-la avec DB Browser ou SQLStudio
 
