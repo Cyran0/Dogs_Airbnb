@@ -1,6 +1,6 @@
 Bienvenue sur le repository Rails de Evan Bourgouin
 
-Ce projet crée une base de donnée pour un site similaire à Doctolib.
+Ce projet crée une base de donnée pour un site de Airbnb pour chiens.
 
 Il-y-a un model dogsitter et un model dog. Un dogsitter peut promener plusieurs dog à travers un stroll (promenade, en anglais) ; et un dog peut avoir plusieurs dogsitter à travers un stroll.
 
