@@ -10,45 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_25_162043) do
-
-  create_table "cities", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "dogs", force: :cascade do |t|
-    t.integer "city_id"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["city_id"], name: "index_dogs_on_city_id"
-  end
-
-  create_table "dogs_strolls", id: false, force: :cascade do |t|
-    t.integer "dog_id", null: false
-    t.integer "stroll_id", null: false
-    t.index ["dog_id", "stroll_id"], name: "index_dogs_strolls_on_dog_id_and_stroll_id"
-  end
-
-  create_table "dogsitters", force: :cascade do |t|
-    t.integer "city_id"
-    t.string "first_name"
-    t.string "last_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["city_id"], name: "index_dogsitters_on_city_id"
-  end
-
-  create_table "strolls", force: :cascade do |t|
-    t.integer "city_id"
-    t.integer "dogwalker_id"
-    t.datetime "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["city_id"], name: "index_strolls_on_city_id"
-    t.index ["dogwalker_id"], name: "index_strolls_on_dogwalker_id"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
